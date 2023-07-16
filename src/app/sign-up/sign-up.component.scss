@@ -1,0 +1,64 @@
+mat-card{
+    position: absolute;
+    width: 84%;
+    height: auto;
+    top: 4%;
+    left: 8%;
+    margin: auto;
+    padding: 0%;
+    background: #F4976C;  
+    border-radius: 25px;
+
+
+}
+mat-card-content{
+    margin: 0%;
+    padding: 0%;
+    border-radius: 25px;
+    background: #F4976C;  
+}
+mat-grid-list{
+    border-radius: 25px;
+background: #F4976C;    
+margin: 0%;
+}
+.mat-grid-tile-content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+.logo{
+    display: flex;
+    text-align: center;
+
+flex-direction: column;
+justify-content: center;
+flex-shrink: 0;
+color: #FFEBA8;
+text-align: center;
+font-family: Monoton;
+font-size: 96px;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+}
+.img-holder{
+    display: flex;
+    width: 100%; 
+  height: auto;
+  justify-content: end;
+}
+.img-holder img{
+   max-width: 100%; 
+  max-height: 100%;
+  width: auto;
+  height: auto;
+}
+
+.form-card {
+    height: 94%;   
+    background-color:#B4DFE5 ;
+    border-radius: 0 25px 25px 0;
+}

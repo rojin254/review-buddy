@@ -1,0 +1,21 @@
+.dashboard-container {
+  margin: 0 4%;
+  padding: 2%;
+  .button-group {
+    width: 40%;
+    display: flex;
+    justify-content: space-evenly;
+    button {
+      width: 40%;
+      border-radius: 25px;
+
+      
+
+      text-align: center;
+      font-family: Lohit Bengali;
+      font-style: normal;
+      font-weight: 400;
+      line-height: normal;
+    }
+  }
+}

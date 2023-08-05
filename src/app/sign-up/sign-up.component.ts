@@ -6,5 +6,9 @@ import { Component } from '@angular/core';
   styleUrls: ['./sign-up.component.scss']
 })
 export class SignUpComponent {
+  isLogin=true;
 
+  loginValue(){
+    console.log(this.isLogin);
+  }
 }

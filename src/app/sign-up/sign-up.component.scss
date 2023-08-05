@@ -48,7 +48,7 @@ line-height: normal;
     display: flex;
     width: 100%; 
   height: auto;
-  justify-content: end;
+  justify-content: flex-end;
 }
 .img-holder img{
    max-width: 100%; 
@@ -58,7 +58,40 @@ line-height: normal;
 }
 
 .form-card {
+    display: flex;
+    align-items: center;
     height: 94%;   
     background-color:#B4DFE5 ;
     border-radius: 0 25px 25px 0;
+    justify-content: space-between;
+    padding: 3% 0%;
+}
+mat-button-toggle-group{
+    margin: 2%;
+    width: 50%;
+    border-radius: 25px;
+    background: #F4976C;  
+    align-items: center;
+    justify-content: center;
+}
+mat-button-toggle{
+    margin: 0%;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+}
+mat-button-toggle:first-child{
+    border-radius: 25px 0 0 25px;
+}
+mat-button-toggle:last-child{
+    border-radius: 0 25px 25px 0;
+}
+mat-button-toggle.mat-button-toggle-checked{
+    background-color: #F4976C;
+    color: #FFEBA8;
+    box-shadow: 0px 3px 0px 0px #000000;
+}
+mat-button-toggle{
+    background-color: #FFEBA8;
+    color: #F4976C;
 }

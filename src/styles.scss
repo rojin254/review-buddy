@@ -4,12 +4,13 @@
 @include mat.core();
 
 $my-primary: mat.define-palette(mat.$deep-orange-palette, 300);
-$my-accent: mat.define-palette(mat.$amber-palette, 100, A100, A400);
+$my-accent: mat.define-palette(mat.$blue-palette, 100, A100, A400);
 $my-warn:mat.define-palette(mat.$indigo-palette, 800, A100, A400);
 $my-theme: mat.define-light-theme((
  color: (
    primary: $my-primary,
    accent: $my-accent,
+   warn: $my-warn,
  ),
  typography: mat.define-typography-config(),
  density: 0,
@@ -18,6 +19,7 @@ $my-theme: mat.define-light-theme((
 body {
   margin: 0;
   background-color: #FFECB3;
+  color: #303C6C;
 }
 
 @include mat.all-component-themes($my-theme);

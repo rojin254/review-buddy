@@ -9,6 +9,17 @@
             </mat-grid-tile>
             <mat-grid-tile>
                 <mat-card class="form-card">
+                    <mat-button-toggle-group [(ngModel)]="isLogin" name="signup" aria-label="Signup">
+                        <mat-button-toggle  [value]="true" class="login-btn" checked (click)="loginValue()">Login</mat-button-toggle>
+                        <mat-button-toggle [value]="false" class="register-btn" (click)="loginValue()">Register</mat-button-toggle>
+                    </mat-button-toggle-group>
+
+                    <div *ngIf="isLogin" class="form-div">
+                        <app-login-form></app-login-form>
+                      </div>
+                      <div *ngIf="!isLogin" class="form-div">
+                        <app-register-form></app-register-form>
+                      </div>
 
                 </mat-card>
 
